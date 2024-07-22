@@ -1,0 +1,393 @@
+Microsoft Windows [Version 10.0.19045.4651]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>cd Desktop
+
+C:\Users\user\Desktop>cd Meta
+
+C:\Users\user\Desktop\Meta>cd sdk
+
+C:\Users\user\Desktop\Meta\sdk>cd contrib
+
+C:\Users\user\Desktop\Meta\sdk\contrib>cd cmake
+
+C:\Users\user\Desktop\Meta\sdk\contrib\cmake>cmake -DTRIPLET=x64-windows-mega -DEXTRA_ARGS="-DUSE_PDFIUM=0" -P build_from_scratch.cmake
+-- Building for triplet x64-windows-mega with SDK dir C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../..
+'C:/cmake-3.30.1-windows-x86_64/bin/cmake.exe' '-S' 'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/build3rdParty' '-B' 'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../../../3rdparty_sdk' '-DCMAKE_BUILD_TYPE=Release'
+-- Building for: Visual Studio 17 2022
+-- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19045.
+-- The C compiler identification is MSVC 19.32.31329.0
+-- The CXX compiler identification is MSVC 19.32.31329.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.32.31326/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.32.31326/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (4.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/user/Desktop/Meta/3rdparty_sdk
+'C:/cmake-3.30.1-windows-x86_64/bin/cmake.exe' '--build' 'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../../../3rdparty_sdk' '--config' 'Release'
+Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/user/Desktop/Meta/sdk/contrib/cmake/build3rdParty/CMakeLists.txt
+  build3rdParty.cpp
+  build3rdParty.vcxproj -> C:\Users\user\Desktop\Meta\3rdparty_sdk\Release\build3rdParty.exe
+  Building Custom Rule C:/Users/user/Desktop/Meta/sdk/contrib/cmake/build3rdParty/CMakeLists.txt
+'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../../../3rdparty_sdk/Release/build3rdParty.exe' '--setup' '--removeunusedports' '--nopkgconfig' '--ports' 'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/preferred-ports-sdk.txt' '--triplet' 'x64-windows-mega' '--sdkroot' 'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../..'
+split:  'vcpkg-cmake-config/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'vcpkg-cmake/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'pkgconf/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'vcpkg-pkgconfig-get-modules/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'vcpkg-tool-meson/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'vcpkg-cmake-get-vars/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'c-ares/c303dd024e2dc03a0665ddffbb12a1077933e649' 'all:on' 'ios:off'
+considering all:on
+build
+considering ios:off
+split:  'cryptopp/c303dd024e2dc03a0665ddffbb12a1077933e649'
+split:  'curl/7375bb408f2278d2f1875c259beef93332697ba7' 'all:on' 'ios:off'
+considering all:on
+build
+considering ios:off
+split:  'curl[core,sectransp]/7375bb408f2278d2f1875c259beef93332697ba7' 'all:off' 'ios:curl-for-ios.patch'
+considering all:off
+don't build
+considering ios:curl-for-ios.patch
+split:  'libsodium/92adeffbce95847e141411177248ed04ac49ea9b' 'all:on' 'ios:libsodium-ios.patch'
+considering all:on
+build
+considering ios:libsodium-ios.patch
+split:  'openssl/6172c4b5a08aecf5755f753c6338fa74103d39cf' 'ios:off' 'osx:off'
+considering ios:off
+considering osx:off
+split:  'pcre/d6bd10b9af6f6197711222a0ac827e52e0247e30' 'all:off' 'linux:on'
+considering all:off
+don't build
+considering linux:on
+split:  'readline/8.0' 'all:off' 'osx:on'
+considering all:off
+don't build
+considering osx:on
+split:  'sqlite3/c303dd024e2dc03a0665ddffbb12a1077933e649'
+split:  'zlib/e0a9559a9b24af116388eae242d675bf9fde025c'
+split:  'libuv/c303dd024e2dc03a0665ddffbb12a1077933e649' 'ios:off'
+considering ios:off
+split:  'libmediainfo/19.09'
+split:  'libzen/0.4.37'
+split:  'ffmpeg/c67a3059bbdb19799d402085e7323f71e7d68656' 'all:on' 'ios:off' 'osx:ffmpeg-osx-linker.patch'
+considering all:on
+build
+considering ios:off
+considering osx:ffmpeg-osx-linker.patch
+split:  'freeimage/7476f0d4e77d3333fbb249657df8251c28c4faae' 'osx:freeimage-bool-typedef-xcode-compiler.patch'
+considering osx:freeimage-bool-typedef-xcode-compiler.patch
+split:  'libpng/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'libjpeg-turbo/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'tiff/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'openjpeg/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'libwebp/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'libraw/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'jxrlib/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'openexr/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'imath/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'jasper/7476f0d4e77d3333fbb249657df8251c28c4faae' 'all:jasper-no-freeglut.patch'
+considering all:jasper-no-freeglut.patch
+build with patch "jasper-no-freeglut.patch"
+Got patch "jasper-no-freeglut.patch" for jasper
+split:  'liblzma/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'egl-registry/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'opengl-registry/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'opengl/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'pdfium/5247'
+split:  'freetype[core,bzip2,png,zlib]/6bf5ffffe875f2f824ca68eade4149587357880e'
+split:  'icu/979a5197b3389cfdf91d0ac5d98b6066ce73fd7a' 'all:off' 'osx:on' 'linux:on'
+considering all:off
+don't build
+considering osx:on
+considering linux:on
+split:  'icu/cb91b416cb8f85f0a55853baad23fb18d306148a' 'all:on' 'osx:off' 'linux:off'
+considering all:on
+build
+considering osx:off
+considering linux:off
+split:  'lcms/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'bzip2/c303dd024e2dc03a0665ddffbb12a1077933e649'
+split:  'asio/c303dd024e2dc03a0665ddffbb12a1077933e649'
+split:  'gtest/c303dd024e2dc03a0665ddffbb12a1077933e649' 'all:gtest-warnings-are-not-errors.patch'
+considering all:gtest-warnings-are-not-errors.patch
+build with patch "gtest-warnings-are-not-errors.patch"
+Got patch "gtest-warnings-are-not-errors.patch" for gtest
+Executing: git clone https://github.com/microsoft/vcpkg.git
+Executing: git clone --progress -v vcpkg vcpkg_clone
+Executing: .\bootstrap-vcpkg.bat -disableMetrics
+Downloading https://github.com/microsoft/vcpkg-tool/releases/download/2024-07-10/vcpkg.exe -> C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\vcpkg.exe... done.
+Validating signature... done.
+
+vcpkg package management program version 2024-07-10-d2dfc73769081bdd9b782d08d27794780b7a99b9
+
+See LICENSE.txt for license information.
+Copying triplet from SDK: x64-windows-mega
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\asio
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\asio"
+Executing: git checkout --force --quiet c303dd024e2dc03a0665ddffbb12a1077933e649
+Copying port for asio from vcpkg commit c303dd024e2dc03a0665ddffbb12a1077933e649
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\bzip2
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\bzip2"
+Executing: git checkout --force --quiet c303dd024e2dc03a0665ddffbb12a1077933e649
+Copying port for bzip2 from vcpkg commit c303dd024e2dc03a0665ddffbb12a1077933e649
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\c-ares
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\c-ares"
+Executing: git checkout --force --quiet c303dd024e2dc03a0665ddffbb12a1077933e649
+Copying port for c-ares from vcpkg commit c303dd024e2dc03a0665ddffbb12a1077933e649
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\cryptopp
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\cryptopp"
+Executing: git checkout --force --quiet c303dd024e2dc03a0665ddffbb12a1077933e649
+Copying port for cryptopp from vcpkg commit c303dd024e2dc03a0665ddffbb12a1077933e649
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\curl
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\curl"
+Executing: git checkout --force --quiet 7375bb408f2278d2f1875c259beef93332697ba7
+Copying port for curl from vcpkg commit 7375bb408f2278d2f1875c259beef93332697ba7
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\egl-registry
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\egl-registry"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for egl-registry from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\ffmpeg
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\ffmpeg"
+Executing: git checkout --force --quiet c67a3059bbdb19799d402085e7323f71e7d68656
+Copying port for ffmpeg from vcpkg commit c67a3059bbdb19799d402085e7323f71e7d68656
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\freeimage
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\freeimage"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for freeimage from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\freetype
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\freetype"
+Executing: git checkout --force --quiet 6bf5ffffe875f2f824ca68eade4149587357880e
+Copying port for freetype from vcpkg commit 6bf5ffffe875f2f824ca68eade4149587357880e
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\gtest
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\gtest"
+Executing: git checkout --force --quiet c303dd024e2dc03a0665ddffbb12a1077933e649
+Copying port for gtest from vcpkg commit c303dd024e2dc03a0665ddffbb12a1077933e649
+Applying patch C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../..\contrib\cmake\vcpkg_patches\gtest-warnings-are-not-errors.patch for port gtest
+Executing: git apply --verbose --ignore-whitespace --directory=ports/gtest C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../..\contrib\cmake\vcpkg_patches\gtest-warnings-are-not-errors.patch
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\icu
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\icu"
+Executing: git checkout --force --quiet cb91b416cb8f85f0a55853baad23fb18d306148a
+Copying port for icu from vcpkg commit cb91b416cb8f85f0a55853baad23fb18d306148a
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\imath
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\imath"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for imath from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\jasper
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\jasper"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for jasper from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Applying patch C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../..\contrib\cmake\vcpkg_patches\jasper-no-freeglut.patch for port jasper
+Executing: git apply --verbose --ignore-whitespace --directory=ports/jasper C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../..\contrib\cmake\vcpkg_patches\jasper-no-freeglut.patch
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\jxrlib
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\jxrlib"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for jxrlib from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\lcms
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\lcms"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for lcms from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libjpeg-turbo
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libjpeg-turbo"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for libjpeg-turbo from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\liblzma
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\liblzma"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for liblzma from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libmediainfo
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libmediainfo"
+Copying port for libmediainfo from SDK customized port 19.09
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libpng
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libpng"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for libpng from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libraw
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libraw"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for libraw from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libsodium
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libsodium"
+Executing: git checkout --force --quiet 92adeffbce95847e141411177248ed04ac49ea9b
+Copying port for libsodium from vcpkg commit 92adeffbce95847e141411177248ed04ac49ea9b
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libuv
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libuv"
+Executing: git checkout --force --quiet c303dd024e2dc03a0665ddffbb12a1077933e649
+Copying port for libuv from vcpkg commit c303dd024e2dc03a0665ddffbb12a1077933e649
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libwebp
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libwebp"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for libwebp from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libzen
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\libzen"
+Copying port for libzen from SDK customized port 0.4.37
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\openexr
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\openexr"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for openexr from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\opengl
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\opengl"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for opengl from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\opengl-registry
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\opengl-registry"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for opengl-registry from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\openjpeg
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\openjpeg"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for openjpeg from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\openssl
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\openssl"
+Executing: git checkout --force --quiet 6172c4b5a08aecf5755f753c6338fa74103d39cf
+Copying port for openssl from vcpkg commit 6172c4b5a08aecf5755f753c6338fa74103d39cf
+Copying port for pdfium from SDK customized port 5247
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\pkgconf
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\pkgconf"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for pkgconf from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\sqlite3
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\sqlite3"
+Executing: git checkout --force --quiet c303dd024e2dc03a0665ddffbb12a1077933e649
+Copying port for sqlite3 from vcpkg commit c303dd024e2dc03a0665ddffbb12a1077933e649
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\tiff
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\tiff"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for tiff from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-cmake
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-cmake"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for vcpkg-cmake from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-cmake-config
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-cmake-config"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for vcpkg-cmake-config from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-cmake-get-vars
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-cmake-get-vars"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for vcpkg-cmake-get-vars from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-pkgconfig-get-modules
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-pkgconfig-get-modules"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for vcpkg-pkgconfig-get-modules from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-tool-meson
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\vcpkg-tool-meson"
+Executing: git checkout --force --quiet 7476f0d4e77d3333fbb249657df8251c28c4faae
+Copying port for vcpkg-tool-meson from vcpkg commit 7476f0d4e77d3333fbb249657df8251c28c4faae
+Removing C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\zlib
+Executing: rmdir /S /Q "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\ports\zlib"
+Executing: git checkout --force --quiet e0a9559a9b24af116388eae242d675bf9fde025c
+Copying port for zlib from vcpkg commit e0a9559a9b24af116388eae242d675bf9fde025c
+Performing no-op substitution of vcpkg_fixup_pkgconfig and PKGCONFIG to skip pkgconfig integration/checks
+'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../../../3rdparty_sdk/Release/build3rdParty.exe' '--build' '--ports' 'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/preferred-ports-sdk.txt' '--triplet' 'x64-windows-mega' '--sdkroot' 'C:/Users/user/Desktop/Meta/sdk/contrib/cmake/../..'
+split:  'vcpkg-cmake-config/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'vcpkg-cmake/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'pkgconf/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'vcpkg-pkgconfig-get-modules/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'vcpkg-tool-meson/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'vcpkg-cmake-get-vars/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'c-ares/c303dd024e2dc03a0665ddffbb12a1077933e649' 'all:on' 'ios:off'
+considering all:on
+build
+considering ios:off
+split:  'cryptopp/c303dd024e2dc03a0665ddffbb12a1077933e649'
+split:  'curl/7375bb408f2278d2f1875c259beef93332697ba7' 'all:on' 'ios:off'
+considering all:on
+build
+considering ios:off
+split:  'curl[core,sectransp]/7375bb408f2278d2f1875c259beef93332697ba7' 'all:off' 'ios:curl-for-ios.patch'
+considering all:off
+don't build
+considering ios:curl-for-ios.patch
+split:  'libsodium/92adeffbce95847e141411177248ed04ac49ea9b' 'all:on' 'ios:libsodium-ios.patch'
+considering all:on
+build
+considering ios:libsodium-ios.patch
+split:  'openssl/6172c4b5a08aecf5755f753c6338fa74103d39cf' 'ios:off' 'osx:off'
+considering ios:off
+considering osx:off
+split:  'pcre/d6bd10b9af6f6197711222a0ac827e52e0247e30' 'all:off' 'linux:on'
+considering all:off
+don't build
+considering linux:on
+split:  'readline/8.0' 'all:off' 'osx:on'
+considering all:off
+don't build
+considering osx:on
+split:  'sqlite3/c303dd024e2dc03a0665ddffbb12a1077933e649'
+split:  'zlib/e0a9559a9b24af116388eae242d675bf9fde025c'
+split:  'libuv/c303dd024e2dc03a0665ddffbb12a1077933e649' 'ios:off'
+considering ios:off
+split:  'libmediainfo/19.09'
+split:  'libzen/0.4.37'
+split:  'ffmpeg/c67a3059bbdb19799d402085e7323f71e7d68656' 'all:on' 'ios:off' 'osx:ffmpeg-osx-linker.patch'
+considering all:on
+build
+considering ios:off
+considering osx:ffmpeg-osx-linker.patch
+split:  'freeimage/7476f0d4e77d3333fbb249657df8251c28c4faae' 'osx:freeimage-bool-typedef-xcode-compiler.patch'
+considering osx:freeimage-bool-typedef-xcode-compiler.patch
+split:  'libpng/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'libjpeg-turbo/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'tiff/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'openjpeg/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'libwebp/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'libraw/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'jxrlib/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'openexr/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'imath/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'jasper/7476f0d4e77d3333fbb249657df8251c28c4faae' 'all:jasper-no-freeglut.patch'
+considering all:jasper-no-freeglut.patch
+build with patch "jasper-no-freeglut.patch"
+split:  'liblzma/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'egl-registry/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'opengl-registry/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'opengl/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'pdfium/5247'
+split:  'freetype[core,bzip2,png,zlib]/6bf5ffffe875f2f824ca68eade4149587357880e'
+split:  'icu/979a5197b3389cfdf91d0ac5d98b6066ce73fd7a' 'all:off' 'osx:on' 'linux:on'
+considering all:off
+don't build
+considering osx:on
+considering linux:on
+split:  'icu/cb91b416cb8f85f0a55853baad23fb18d306148a' 'all:on' 'osx:off' 'linux:off'
+considering all:on
+build
+considering osx:off
+considering linux:off
+split:  'lcms/7476f0d4e77d3333fbb249657df8251c28c4faae'
+split:  'bzip2/c303dd024e2dc03a0665ddffbb12a1077933e649'
+split:  'asio/c303dd024e2dc03a0665ddffbb12a1077933e649'
+split:  'gtest/c303dd024e2dc03a0665ddffbb12a1077933e649' 'all:gtest-warnings-are-not-errors.patch'
+considering all:gtest-warnings-are-not-errors.patch
+build with patch "gtest-warnings-are-not-errors.patch"
+Executing: vcpkg install --triplet x64-windows-mega --host-triplet x64-windows-mega asio
+Computing installation plan...
+command:
+"C:\cmake-3.30.1-windows-x86_64\bin\cmake.exe" -DVCPKG_ROOT_DIR=C:/Users/user/Desktop/Meta/3rdparty_sdk/vcpkg -DPACKAGES_DIR=C:/Users/user/Desktop/Meta/3rdparty_sdk/vcpkg/packages -DBUILDTREES_DIR=C:/Users/user/Desktop/Meta/3rdparty_sdk/vcpkg/buildtrees -D_VCPKG_INSTALLED_DIR=C:/Users/user/Desktop/Meta/3rdparty_sdk/vcpkg/installed -DDOWNLOADS=C:/Users/user/Desktop/Meta/3rdparty_sdk/vcpkg/downloads -DVCPKG_MANIFEST_INSTALL=OFF -P "C:\Users\user\Desktop\Meta\3rdparty_sdk\vcpkg\buildtrees\0.vcpkg_tags.cmake"
+failed with the following output:
+d8187afd-ea4a-4fc3-9aa4-a6782e1ed9af, CMake Error at buildtrees/0.vcpkg_tags.cmake:23 (message):,   Microsoft Visual Studio 2019 or 2017 could not be found, Call Stack (most recent call first):,   buildtrees/0.vcpkg_tags.cmake:53 (vcpkg_triplet_file),   buildtrees/0.vcpkg_tags.cmake:88 (vcpkg_get_tags), ,
+Command failed with result code 1. Command was: vcpkg install --triplet x64-windows-mega --host-triplet x64-windows-mega asio
+CMake Error at build_from_scratch.cmake:93 (message):
+  Execute_process command had nonzero exit code 1 with error
+Call Stack (most recent call first):
+  build_from_scratch.cmake:141 (execute_checked_command)
+
+
+
+C:\Users\user\Desktop\Meta\sdk\contrib\cmake>git status
+On branch release/v4.32.0
+Your branch is up to date with 'origin/release/v4.32.0'.
+
+nothing to commit, working tree clean

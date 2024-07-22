@@ -1,0 +1,21 @@
+C:\Users\user\Desktop\Meta\3rdparty_sdk\Release>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 24EC-7611
+
+ Directory of C:\Users\user\Desktop\Meta\3rdparty_sdk\Release
+
+21-07-2024  02:44    <DIR>          .
+21-07-2024  02:44    <DIR>          ..
+21-07-2024  02:44           106,496 build3rdParty.exe
+               1 File(s)        106,496 bytes
+               2 Dir(s)  111,557,578,752 bytes free
+
+C:\Users\user\Desktop\Meta\3rdparty_sdk\Release>.\build3rdParty.exe
+build3rdParty --setup [--removeunusedports] [--nopkgconfig] --ports <ports override file> --triplet <triplet> --sdkroot <path>
+build3rdParty --build --ports <ports override file> --triplet <triplet>
+
+C:\Users\user\Desktop\Meta\3rdparty_sdk\Release>.\build3rdParty.exe --help
+unknown parameter: --help
+
+C:\Users\user\Desktop\Meta\3rdparty_sdk\Release>.\build3rdParty.exe -help
+unknown parameter: -help
